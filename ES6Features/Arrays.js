@@ -77,11 +77,28 @@ var summ = data.flatMap(e => e)
 .filter(r => r%2 == 0).map(t => t*2).forEach(e => console.log(e))
 
 console.log(arr)
-console.log(arr.slice(4))
+console.log("arr.slice(4)" + arr.slice(4))
 console.log(arr.slice(-3))
 let sx = arr.splice(0,2)
 console.log(arr.splice(0,2))
 console.log(sx)
+
+let languages = ['C', 'C++', 'Java', 'JavaScript'];
+console.log(languages);
+console.log(languages.splice(1, 1, 'Python'));
+console.log(languages.splice(2,1,'C#','Swift','Go'))
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// At position 2, add "Lemon" and "Kiwi"
+const fruit = fruits.splice(2, 0, "Lemon", "Kiwi");
+console.log(fruit);
+
+var arr = [4, 7, 8, 9, 4, 7, 2, 1]
+console.log(arr.sort())
+
+//second highest element in array
+console.log(arr.sort().reverse().indexOf(1))
+
 
 
 
