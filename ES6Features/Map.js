@@ -1,0 +1,41 @@
+var mapp = new Map();
+mapp.set("key1", "value1");
+mapp.set("key2", "value2");
+mapp.set("key3", "value3");
+mapp.set("key4", "value4");
+mapp.set("key5", "value5");
+mapp.set("key6", "value6");
+
+console.log(mapp);
+console.log(mapp.get("key5"));
+console.log(mapp.set("key7", "value7"));
+console.log(mapp);
+console.log(mapp.delete("key4"));
+console.log(mapp);
+console.log(mapp.entries());
+console.log(mapp.keys());
+console.log(mapp.values());
+console.log(mapp.size);
+console.log(mapp.has("key4"));
+console.log(mapp.has("key5"));
+console.log(mapp.clear());
+mapp.set("key1", "value1");
+mapp.set("key2", "value2");
+mapp.set("key3", "value3");
+mapp.set("key4", "value4");
+mapp.set("key5", "value5");
+mapp.set("key6", "value6");
+for(let col of mapp.entries())   
+console.log(`${col[0]}: ${col[1]}`);
+
+var mappp = new Map();
+mappp.set("key1", "value1");
+mappp.set("key2", "value2");
+mappp.set("key3", "value3");
+mappp.set("key4", "value4");
+mappp.set("key5", "value5");
+mappp.set("key6", "value6");
+var itr = mappp.values();
+console.log(itr.next());  
+console.log(itr.next());  
+console.log(itr.next());
